@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product CHOOSING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bungee&family=Gemunu+Libre:wght@200..800&family=Goldman:wght@400;700&family=Lexend+Deca:wght@100..900&family=Modak&family=Rubik+Dirt&family=Rubik+Distressed&family=Sigmar+One&family=Unica+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b1b1b;
+            color: #fff;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #5C4033;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: "Bungee", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        .nav-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card:hover .card-title {
+            background-color: #ff9999;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="account.html">ACCOUNT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <a href="products.html">
+            <img src="https://via.placeholder.com/300" alt="Product" >
+            <div class="card-title">Cleanser</div>
+        </a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <div class="card-title">Face Mask</div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <div class="card-title">Exfoliator</div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <div class="card-title">Serum</div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <div class="card-title">Moisturizer</div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <div class="card-title">Facial Oil</div>
+        </div>
+    </div>
+</body>
+</html>

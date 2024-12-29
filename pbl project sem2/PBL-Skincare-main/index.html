@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinRevive</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #5C4033;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('mainpic1.png'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            font-weight: bold;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .hero button {
+            background-color: #5C4033;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .hero button:hover {
+            background-color: #452d24;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="account.html">ACCOUNT</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>SKINREVIVE</h1>
+        <p>Product made for people with special skin texture.<br>
+           What are you waiting for? Shop now!</p>
+        <p>Don't know which product suits your skin? Click the button below:</p>
+        <button onclick="window.location.href='#'">SKIN TYPE QUIZ &rarr;</button>
+    </div>
+</body>
+</html>

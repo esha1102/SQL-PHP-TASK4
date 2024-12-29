@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bungee&family=Gemunu+Libre:wght@200..800&family=Goldman:wght@400;700&family=Lexend+Deca:wght@100..900&family=Modak&family=Rubik+Dirt&family=Rubik+Distressed&family=Sigmar+One&family=Unica+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">BACK</a></li>
+     
+    </ul>
+  </nav>
+
+  <!-- Account Section -->
+  <div class="account-page">
+    <h1>My Account</h1>
+   
+    <form action="login_process.php" method="post">
+      <label for="username">username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      
+      <label for="password">password</label>
+      <input type="password" id="password" name="password" placeholder="password" required>
+
+    <div class="buttons">
+      <button class="submit" type="submit">sign in</button>
+      <button class="log-out" type="submit">log out</button>
+    </div>
+  </div>
+</form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* Base Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #5C4033;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: "Bungee", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  .nav-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Account Page */
+.account-page {
+  background-color: #56362D;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  height: 100vh;
+}
+
+.account-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  background-color: #E3AC6D;
+  padding: 50px 50px 50px 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  color: white;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+form input {
+  width: calc(100% - 20px);
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.quiz-btn {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-btn:hover {
+  background-color: white;
+  color: #E3AC6D;
+}
+
+/* Buttons */
+.buttons {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit {
+  background-color: #4CAF50; /* Green */
+}
+
+.log-out {
+  background-color: #F44336; /* Red */
+}
+
+.buttons button:hover {
+  filter: brightness(1.2);
+}
+
+.buttons button:active {
+  filter: brightness(1.4);
+}
+</style>

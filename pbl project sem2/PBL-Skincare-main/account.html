@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="account.html">ACCOUNT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Account Section -->
+  <div class="account-page">
+    <h1>My Account</h1>
+   
+    <form action="login_process.php" method="post">
+      <label for="username">username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+      
+      <label for="password">password</label>
+      <input type="password" id="password" name="password" placeholder="password">
+
+      <div class="buttons">
+        <button class="submit" type="submit">sign in</button>
+      </div>
+    </form>
+    
+    <div class="buttons">
+      <button class="log-out">log out</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

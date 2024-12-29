@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="javascript:void(0)" id="products-nav">Products</a></li>
+      <li><a href="skintype.html" id="skintypes-nav">Skintypes</a></li>
+      <li><a href="javascript:void(0)" id="blogs-nav">Blogs</a></li>
+      <li><a href="javascript:void(0)" id="about-nav">About</a></li>
+      <li>
+        <a href="javascript:void(0)" id="account-nav">
+          <img src="account-icon.png" alt="Account" class="icon">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Account Section -->
+  <div id="account-page" class="hidden">
+    <div class="account-container">
+      <h1>My Account</h1>
+      <div class="profile-pic"></div>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button type="button" class="quiz-btn">Skin Type Quiz</button>
+      </form>
+      <div class="buttons">
+        <button class="sign-in">Sign In</button>
+        <button class="log-in">Log In</button>
+        <button class="log-out">Log Out</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skintypes Section -->
+  <div id="skintypes-page" class="hidden">
+    <div class="skintypes-container">
+      <h1>Skin Types</h1>
+      <div class="skintypes-grid">
+        <div class="skintype-card">
+          <img src="dry-skin.jpg" alt="Dry Skin">
+          <p>Dry Skin</p>
+        </div>
+        <div class="skintype-card">
+          <img src="oily-skin.jpg" alt="Oily Skin">
+          <p>Oily Skin</p>
+        </div>
+        <div class="skintype-card">
+          <img src="combination-skin.jpg" alt="Combination Skin">
+          <p>Combination Skin</p>
+        </div>
+        <div class="skintype-card">
+          <img src="sensitive-skin.jpg" alt="Sensitive Skin">
+          <p>Sensitive Skin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* Skintypes Page */
+#skintypes-page {
+  background-color: #f4e4d9;
+  padding: 20px;
+  text-align: center;
+}
+
+.skintypes-container h1 {
+  color: #4b2d22;
+  margin-bottom: 20px;
+}
+
+.skintypes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skintype-card {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skintype-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skintype-card:hover {
+  transform: scale(1.1);
+}
+
+.skintype-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4b2d22;
+}
+</style>
+<script>
+    // Account Navigation
+document.getElementById('account-nav').addEventListener('click', function () {
+  showPage('account-page');
+});
+
+// Skintypes Navigation
+document.getElementById('skintypes-nav').addEventListener('click', function () {
+  showPage('skintypes-page');
+});
+
+// Helper Function to Show Pages
+function showPage(pageId) {
+  const pages = document.querySelectorAll('div[id$="-page"]');
+  pages.forEach(page => page.classList.add('hidden')); // Hide all pages
+  document.getElementById(pageId).classList.remove('hidden'); // Show selected page
+}
+</script>

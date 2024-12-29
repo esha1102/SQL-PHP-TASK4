@@ -1,0 +1,143 @@
+/* Base Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #4b2d22;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Account Page */
+.account-page {
+  background-color: #56362D;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  height: 100vh;
+}
+
+.account-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  background-color: #E3AC6D;
+  padding: 50px 50px 50px 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  color: white;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+form input {
+  width: calc(100% - 20px);
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.quiz-btn {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-btn:hover {
+  background-color: white;
+  color: #E3AC6D;
+}
+
+/* Buttons */
+.buttons {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit {
+  background-color: #4CAF50; /* Green */
+}
+
+.log-out {
+  background-color: #F44336; /* Red */
+}
+
+.buttons button:hover {
+  filter: brightness(1.2);
+}
+
+.buttons button:active {
+  filter: brightness(1.4);
+}
